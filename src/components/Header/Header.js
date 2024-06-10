@@ -9,13 +9,13 @@ const Header = () => (
 
         <nav>
             <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#services">Services</a></li>
+                <li><a href="#about">O Bączek Taxi</a></li>
+                <li><a href="#services">Usługi</a></li>
+                <li><a href="#contact">Kontakt</a></li>
             </ul>
         </nav>
 
-        <a href="tel:+1234567890" className="button button--secondary">
+        <a href="tel:+48662567931" className="button button--secondary">
             Zamów taksówkę
         </a>
 

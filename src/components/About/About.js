@@ -3,22 +3,25 @@ import logoAbout from "../../images/logoAbout.svg";
 import './About.scss';
 
 const About = () => (
-    <section className="aboutSection section">
+    <section className="aboutSection section" id="about">
 
         <div className="grid height-100">
             <div className="col-6@lg flex">
                 <img className="logoAbout align-self-center " src={logoAbout} width={500} alt="Bączek TAXI"/>
             </div>
             <div className="col-6@lg">
-                <h3 className="font-500">Pickled craft beer you probably haven't heard of them chillwave, butcher YOLO
-                    roof party meggings try-hard +1 portland. Pickled craft beer y </h3>
+                <h3 className="font-500">Nasze pojazdy są wyposażone w foteliki dla dzieci, zapewniając bezpieczną
+                    podróż całej rodzinie. Oferujemy transfery na lotnisko, przewozy lokalne oraz obsługę imprez.</h3>
 
-                <h4 className="font-500 margin-top-lg">Pickled craft beer you probably haven't heard of them chillwave,
-                    butcher YOLO roof party meggings try-hard +1 portland. Pickled craft beer you probably haven't heard
-                    of them chillwave, butcher YOLO roof party meggings try-hard +1 portland. </h4>
+                <h4 className="font-500 margin-top-lg">Bączek TAXI to profesjonalna firma transportowa działająca na
+                    terenie Elbląga. Oferujemy niezawodne i bezpieczne przewozy do Gdańska, na lotnisko oraz do Krynicy
+                    Morskiej. Posiadamy licencję taxi, co gwarantuje zgodność z normami prawnymi.
+                    <br/><br/>
+                    Zaufaj Bączek TAXI i ciesz się spokojną podróżą!
+                </h4>
 
                 <div className="flex">
-                    <a href="tel:+1234567890" className="button button--secondary margin-top-md margin-left-auto">
+                    <a href="tel:+48662567931" className="button button--secondary margin-top-md margin-left-auto">
                         Zamów taksówkę
                     </a>
                 </div>

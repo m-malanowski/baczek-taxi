@@ -619,7 +619,7 @@
   width: 50%;
 }
 
-.text-center{
+.text-center {
   text-align: center;
 }
 
@@ -694,6 +694,10 @@
 
 .block {
   display: block;
+}
+
+.inline-flex {
+  display: inline-flex !important;
 }
 
 .flex {

@@ -1,23 +1,24 @@
 import React from 'react';
 import waitingLogo from '../../images/waitingLogo.svg';
+import PricingCard from '../PricingCard/PricingCard';
+import useScrollAnimation from '../useScrollAnimation';
 import './pricing.scss';
 
-const Pricing = () => (
-    <section className="pricingSection">
-        <div className="pricingWrapper">
+const Pricing = () => {
+    useScrollAnimation();
+
+    return (
+        <section className="pricingSection">
             <h3 className="text-center">Nasz cennik</h3>
 
-            <div className="pricingCard">
-                <h4 className="text-center">Opłata wstępna</h4>
-                <div>
-                    <span className="digit">6</span>
-                    <span className="currency">Zł</span>
-                </div>
-                <img className="pricingLogo" src={waitingLogo} width={220} alt="Bączek TAXI"/>
-            </div>
-        </div>
+            <div className="pricingWrapper">
 
-    </section>
-);
+                <PricingCard text="Opłata wstępna" price="6" logo={waitingLogo}/>
+                <PricingCard text="Przejazd 1 km" price="2.5" logo={waitingLogo}/>
+                <PricingCard text="Przejazd nocny" price="3.5" logo={waitingLogo}/>
+            </div>
+        </section>
+    );
+};
 
 export default Pricing;

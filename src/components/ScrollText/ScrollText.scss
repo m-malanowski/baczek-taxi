@@ -3,9 +3,7 @@
   align-items: center;
   overflow: hidden;
   white-space: nowrap;
-  font-size: 60px;
   width: 100%;
-  padding: 20px;
   background-color: var(--color-white);
   position: relative;
   height: 50vh;
@@ -39,7 +37,7 @@
 .scrollArrow {
   position: absolute;
   z-index: 1;
-  top: calc(var(--space-lg) * -1);
+  //top: calc(var(--space-xxs) * -1);
   left: 50%;
   transform: translate(-50%, -50%);
 }

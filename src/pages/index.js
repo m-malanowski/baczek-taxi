@@ -17,7 +17,9 @@ const IndexPage = () => (
 
         <Services/>
         <Pricing/>
-        <ScrollText text="506 870 672" isArrow={false} isNegative={true}/>
+        <div className="padding-top-md">
+            <ScrollText text="662 567 931" isArrow={false} isNegative={true}/>
+        </div>
 
         <Footer/>
     </>

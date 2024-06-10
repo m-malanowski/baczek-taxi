@@ -1,24 +1,18 @@
 .pricingSection {
-  height: 80vh;
+  height: 85vh;
   background-color: var(--color-white);
   padding-bottom: var(--space-xl);
+  overflow: hidden;
 }
 
 .pricingWrapper {
   border-radius: 50px;
   background-color: #fddc01;
   margin: 0 var(--space-xxl);
-  padding: var(--space-lg);
   display: grid;
   place-items: center;
-}
-
-.pricingCard {
-  border: 8px solid var(--color-contrast-higher);
-  border-radius: 50px;
-  width: 600px;
   position: relative;
-  padding: var(--space-sm) var(--space-xl);
+  height: 100%;
 }
 
 .digit {
@@ -36,4 +30,44 @@
   position: absolute;
   bottom: var(--space-lg);
   right: var(--space-lg);
+}
+
+.pricingCard {
+  border: 8px solid var(--color-contrast-higher);
+  border-radius: 50px;
+  width: 600px;
+  position: absolute;
+  padding: var(--space-sm) var(--space-xl);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  transition: transform 0.5s ease, opacity 0.5s ease;
+  opacity: 0;
+  background-color: #fddc01;
+}
+
+.pricingCard:nth-child(1) {
+  top: 100px;
+}
+.pricingCard:nth-child(2) {
+  top: 150px;
+}
+.pricingCard:nth-child(3) {
+  top: 200px;
+}
+
+
+@keyframes fadeInUp {
+  from {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.pricingCard.is-visible {
+  transform: translateY(0);
+  opacity: 1;
+  animation: fadeInUp 0.15s ease forwards;
 }

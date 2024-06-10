@@ -2,14 +2,11 @@ import React from 'react';
 import './footer.scss';
 
 const Footer = () => (
-    <footer className="footerSection section">
-        <h3>Kontakt</h3>
+    <footer className="footerSection section" id="contact">
+        <h3>Bączek TAXI</h3>
 
-        <h4 className="font-500">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. A
-            <br/>
-            Dolor sit amet, consectetur adipisicing elit. A
-        </h4>
+        <h4 className="font-500">Jeśli potrzebujesz szybkiego i niezawodnego transportu, skontaktuj się z Bączek
+            TAXI. <br/> Jesteśmy dostępni 24/7, aby zapewnić Ci bezpieczną i komfortową podróż.</h4>
     </footer>
 );
 
