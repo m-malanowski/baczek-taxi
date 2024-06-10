@@ -1,5 +1,21 @@
 .servicesSection {
   background-color: var(--color-white);
 
+}
 
+
+.servicesList {
+  display: flex;
+  align-items: center;
+  //flex-wrap: wrap;
+  justify-content: space-between;
+  margin: var(--space-xxl) 0;
+  gap: var(--space-xxl);
+}
+
+.singleService {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: var(--space-xs);
 }

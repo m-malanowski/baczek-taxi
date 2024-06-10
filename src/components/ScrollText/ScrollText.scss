@@ -13,6 +13,10 @@
 
 .scrollText {
   transform: rotate(4deg);
+
+  &.negative {
+    transform: rotate(-4deg);
+  }
 }
 
 .scrollContainer span, .scrollContainer img {
@@ -35,7 +39,7 @@
 .scrollArrow {
   position: absolute;
   z-index: 1;
-  top: calc(var(--space-xxl) * -1);
+  top: calc(var(--space-lg) * -1);
   left: 50%;
   transform: translate(-50%, -50%);
 }

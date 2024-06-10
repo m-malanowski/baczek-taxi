@@ -1,0 +1,39 @@
+.pricingSection {
+  height: 80vh;
+  background-color: var(--color-white);
+  padding-bottom: var(--space-xl);
+}
+
+.pricingWrapper {
+  border-radius: 50px;
+  background-color: #fddc01;
+  margin: 0 var(--space-xxl);
+  padding: var(--space-lg);
+  display: grid;
+  place-items: center;
+}
+
+.pricingCard {
+  border: 8px solid var(--color-contrast-higher);
+  border-radius: 50px;
+  width: 600px;
+  position: relative;
+  padding: var(--space-sm) var(--space-xl);
+}
+
+.digit {
+  font-weight: 700;
+  font-size: 200px;
+  color: var(--color-contrast-higher);
+}
+
+.currency {
+  font-weight: 400;
+  font-size: 100px;
+}
+
+.pricingLogo {
+  position: absolute;
+  bottom: var(--space-lg);
+  right: var(--space-lg);
+}
