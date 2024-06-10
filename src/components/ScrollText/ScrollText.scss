@@ -1,0 +1,41 @@
+.scrollContainer {
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  white-space: nowrap;
+  font-size: 60px;
+  width: 100%;
+  padding: 20px;
+  background-color: var(--color-white);
+  position: relative;
+  height: 50vh;
+}
+
+.scrollText {
+  transform: rotate(4deg);
+}
+
+.scrollContainer span, .scrollContainer img {
+  transform: skewX(-15deg);
+  display: inline-block;
+  margin: 0 10px;
+}
+
+.scrollContainer span {
+  font-size: 180px;
+  color: var(--color-contrast-higher);
+}
+
+.starIcon {
+  width: 80px;
+  height: 80px;
+  margin: 0 10px;
+}
+
+.scrollArrow {
+  position: absolute;
+  z-index: 1;
+  top: calc(var(--space-xxl) * -1);
+  left: 50%;
+  transform: translate(-50%, -50%);
+}

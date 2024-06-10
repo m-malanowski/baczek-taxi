@@ -1,0 +1,10 @@
+@use 'luminaFrame/base/_mixins.scss' as *;
+@use 'luminaFrame/base/breakpoints' as *;
+
+html {
+  background-color: #FDDC01;
+}
+
+.section {
+  padding: var(--space-md) var(--space-lg);
+}

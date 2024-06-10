@@ -1,0 +1,21 @@
+.heroSection {
+  background-color: #FDDC01;
+  height: 60vh;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.heroGreeting {
+  width: 50%;
+  display: flex;
+  align-items: baseline;
+  flex-direction: column;
+  //margin-top: var(--space-lg);
+}
+
+.heroLogo {
+  position: absolute;
+  right: var(--space-xxxxl);
+  top: var(--space-xxl);
+}

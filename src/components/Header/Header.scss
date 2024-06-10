@@ -1,0 +1,38 @@
+.headerSection {
+  background-color: var(--color-white);
+  padding: var(--space-xxxs) var(--space-sm);
+  border-radius: 12px;
+  margin: var(--space-sm) var(--space-lg  );
+
+  display: flex;
+  align-items: center;
+  gap: var(--space-xs);
+
+
+  nav {
+    margin-left: auto;
+
+  }
+
+  nav ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+    li {
+      margin-right: 15px;
+
+      a {
+        text-decoration: none;
+        color: var(--color-contrast);
+        font-weight: 600;
+
+        &:hover {
+          color: #b7d48d;
+        }
+      }
+    }
+  }
+}
+
