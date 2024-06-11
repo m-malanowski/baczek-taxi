@@ -15,7 +15,7 @@
   @include defineColorHSL(--color-accent-lighter,  53, 96%, 70%);
 
   @include defineColorHSL(--color-black, 204, 28%, 7%);
-  @include defineColorHSL(--color-white, 0, 0%, 100%);
+  @include defineColorHSL(--color-white, 0, 0%,  94.9%);
   // feedback
   @include defineColorHSL(--color-warning-darker, 46, 100%, 47%);
   @include defineColorHSL(--color-warning-dark, 46, 100%, 50%);

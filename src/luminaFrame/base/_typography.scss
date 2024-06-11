@@ -66,7 +66,6 @@ h2 {
 h3 {
   font-size: calc(26px + (32 - 26) * ((100vw - 320px) / (1900 - 360)));
   line-height: 1.6;
-
 }
 
 h4 {
@@ -78,7 +77,6 @@ h4 {
 
 h5 {
   font-size: calc(16px + (22 - 16) * ((100vw - 320px) / (1900 - 360)));
-  //font-size: var(--text-md, 1.075rem);
   line-height: 1.4;
 }
 
