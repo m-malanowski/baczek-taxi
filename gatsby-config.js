@@ -6,11 +6,17 @@ module.exports = {
         title: `baczektaxionline`,
         siteUrl: `https://www.yourdomain.tld`
     },
-    plugins: ["gatsby-plugin-sass", "gatsby-plugin-image", "gatsby-plugin-sitemap", {
+    plugins: ["gatsby-plugin-sass", "gatsby-plugin-image", "gatsby-plugin-sitemap", `gatsby-plugin-offline`, {
         resolve: 'gatsby-plugin-manifest',
         options: {
-            "icon": "src/images/icon.png"
-        }
+            name: `Bączek Taxi`,
+            short_name: `Bączek`,
+            start_url: `/`,
+            background_color: `#fddc01`,
+            theme_color: `#000`,
+            display: `minimal-ui`,
+            icon: `src/images/favicon.png`,
+        },
     }, "gatsby-plugin-mdx", "gatsby-plugin-sharp", "gatsby-transformer-sharp", {
         resolve: 'gatsby-source-filesystem',
         options: {
