@@ -1,3 +1,11 @@
+@use '../../luminaFrame/base/breakpoints' as *;
+
 .footerSection {
   background-color: var(--color-white);
+
+  .button {
+    @include breakpoint(md, "not all") {
+      width: 100%;
+    }
+  }
 }
