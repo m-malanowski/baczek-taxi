@@ -1,9 +1,15 @@
+@use '../../luminaFrame/base/breakpoints' as *;
+
 .heroSection {
   background-color: #FDDC01;
   height: 55vh;
   position: relative;
   display: flex;
   align-items: center;
+  @include breakpoint(sm, "not all") {
+    height: 70vh;
+    align-items: baseline;
+  }
 }
 
 .heroGreeting {
@@ -11,11 +17,16 @@
   display: flex;
   align-items: baseline;
   flex-direction: column;
-  //margin-top: var(--space-lg);
 }
 
 .heroLogo {
-  //position: absolute;
-  //right: var(--space-xxxxl);
-  //top: var(--space-xxl);
+  @include breakpoint(sm, "not all") {
+    position: absolute;
+    bottom: 0;
+    width: 225px;
+    right: 0;
+  }
+  @include breakpoint(xs, "not all") {
+    width: 180px;
+  }
 }

@@ -1,6 +1,10 @@
 @use 'luminaFrame/base/_mixins.scss' as *;
 @use 'luminaFrame/base/breakpoints' as *;
 
+body {
+  font-family: 'Inter', sans-serif;
+}
+
 html {
   background-color: #FDDC01;
   overflow-x: hidden;

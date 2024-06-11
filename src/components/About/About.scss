@@ -1,5 +1,16 @@
+@use '../../luminaFrame/base/breakpoints' as *;
+
 .aboutSection {
   background-color: var(--color-white);
   height: 60vh;
   position: relative;
+  @include breakpoint(md, "not all") {
+    height: 80vh;
+  }
+
+  .logoAbout{
+    @include breakpoint(md, "not all") {
+      display: none;
+    }
+  }
 }

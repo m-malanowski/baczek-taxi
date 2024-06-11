@@ -15,6 +15,13 @@
 
 .section{
   padding: var(--space-xl) var(--space-xxl);
+  @include breakpoint(sm, "not all") {
+    padding: var(--space-md);
+  }
+
+  @include breakpoint(xl, "not all") {
+    padding: var(--space-xl);
+  }
 
   &--full{
     margin-left: calc(var(--space-xxl) * -1);

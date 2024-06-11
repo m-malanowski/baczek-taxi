@@ -1,3 +1,5 @@
+@use '../../luminaFrame/base/breakpoints' as *;
+
 .pricingSection {
   height: 85vh;
   background-color: var(--color-white);
@@ -13,23 +15,39 @@
   place-items: center;
   position: relative;
   height: 100%;
+  @include breakpoint(md, "not all") {
+    background-color: transparent;
+  }
 }
 
 .digit {
   font-weight: 700;
   font-size: 200px;
   color: var(--color-contrast-higher);
+  @include breakpoint(sm, "not all") {
+    font-size: 150px;
+    line-height: 1;
+  }
 }
 
 .currency {
   font-weight: 400;
   font-size: 100px;
+  color: var(--color-contrast-higher);
+  @include breakpoint(sm, "not all") {
+    font-size: 50px;
+  }
 }
 
 .pricingLogo {
   position: absolute;
   bottom: var(--space-lg);
   right: var(--space-lg);
+
+  @include breakpoint(sm, "not all") {
+    width: 100px;
+    bottom: 0;
+  }
 }
 
 .pricingCard {
@@ -42,6 +60,10 @@
   transition: transform 0.5s ease, opacity 0.5s ease;
   opacity: 0;
   background-color: #fddc01;
+  @include breakpoint(sm, "not all") {
+    width: 300px;
+    height: 300px;
+  }
 }
 
 .pricingCard:nth-child(1) {
@@ -53,7 +75,6 @@
 .pricingCard:nth-child(3) {
   top: 200px;
 }
-
 
 @keyframes fadeInUp {
   from {

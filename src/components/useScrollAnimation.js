@@ -9,7 +9,7 @@ const useScrollAnimation = () => {
             cards.forEach((card, index) => {
                 const cardTop = card.getBoundingClientRect().top;
 
-                if (index === 0 || cardTop < windowHeight - (index * 400)) {
+                if (index === 0 || cardTop < windowHeight - (index * 350)) {
                     card.classList.add('is-visible');
                 } else {
                     card.classList.remove('is-visible');

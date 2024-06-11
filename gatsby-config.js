@@ -32,5 +32,14 @@ module.exports = {
                 "259913984",
             ],
         }
-    }]
+    },
+        {
+            resolve: `gatsby-plugin-google-fonts`,
+            options: {
+                fonts: [
+                    `inter\:400,500,700`
+                ],
+                display: 'swap'
+            }
+        }]
 };

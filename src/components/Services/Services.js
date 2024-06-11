@@ -22,20 +22,20 @@ const Services = () => (
         <div className="servicesList">
             <div className="singleService">
                 <img className="" src={logoHero} width={120} alt="Bączek TAXI"/>
-                <h3>Bezpieczeństwo</h3>
+                <h3 className="text-center">Bezpieczeństwo</h3>
                 <h4 className="font-500  text-center">Zawsze priorytetowo traktujemy bezpieczeństwo naszych
                     pasażerów, zapewniając foteliki dla dzieci i przestrzegając wszelkich przepisów.</h4>
             </div>
             <div className="singleService">
                 <img className="" src={waitingLogo} width={120} alt="Bączek TAXI"/>
-                <h3>Niezawodność</h3>
+                <h3 className="text-center">Niezawodność</h3>
                 <h4 className="font-500  text-center">Nasza niezawodność polega na punktualności, profesjonalizmie i
                     dostępności 24/7. Działamy na terenie Elbląga, wykonując kursy do Gdańska, na lotnisko i do Krynicy
                     Morskiej. </h4>
             </div>
             <div className="singleService">
                 <img className="" src={ridingLogo} width={160} alt="Bączek TAXI"/>
-                <h3>Elastyczność</h3>
+                <h3 className="text-center">Elastyczność</h3>
                 <h4 className="font-500  text-center">Oferujemy szeroki zakres usług, w tym obsługę imprez
                     z płatnością godzinową. Dopasowujemy się do Twoich potrzeb, aby zapewnić maksymalny komfort
                     podróży.</h4>

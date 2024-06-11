@@ -20,14 +20,10 @@
 //}
 
 :root {
-  --font-primary: 'Test Regular', 'Helvetica', 'Arial', sans-serif;
-  --font-primary-light: 'Test Light', 'Helvetica', 'Arial', sans-serif;
-  --font-primary-medium: 'Test Medium', 'Helvetica', 'Arial', sans-serif;
+  --font-primary: 'Inter', 'Helvetica', 'Arial', sans-serif;
+  --font-primary-light: 'Inter Light', 'Helvetica', 'Arial', sans-serif;
+  --font-primary-medium: 'Inter Medium', 'Helvetica', 'Arial', sans-serif;
   --font-bold: 'Test Bold', sans-serif;
-
-  //--font-primary: 'Poppins Regular', 'Helvetica', 'Arial', sans-serif;
-  //--font-primary-light: 'Poppins Light', 'Helvetica', 'Arial', sans-serif;
-  //--font-primary-medium: 'Poppins Medium', 'Helvetica', 'Arial', sans-serif;
   --body-font-weight: 500;
   --text-base-size: 10px;
   --text-scale-ratio: 1.55;
@@ -54,18 +50,15 @@
 }
 
 body {
-  font-family: var(--font-primary-light, sans-serif);
   color: var(--color-contrast, hsl(0, 0%, 40%));
   font-weight: var(--body-font-weight, normal);
   line-height: var(--body-line-height);
 }
 
 h1, h2, h3, h4, h5, h6 {
-  //color: var(--color-contrast-higher, hsl(0, 0%, 15%));
   line-height: var(--heading-line-height, 1.2);
   font-weight: var(--heading-front-weight, 600);
   margin: 1rem 0;
-  font-family: var(--font-primary-light);
   color: var(--color-contrast-higher);
 
   span {
@@ -84,15 +77,10 @@ p {
 h1 {
   font-size: calc(34px + (64 - 34) * ((100vw - 320px) / (1900 - 360)));
   font-family: var(--font-primary);
-
-  //font-size: var(--text-xxxl, 2rem);
-  //font-family: var(--font-primary);
 }
 
 h2 {
-  font-size: calc(34px + (64 - 34) * ((100vw - 320px) / (1900 - 360)));
-  //font-size: var(--text-xxl, 1.75rem);
-  //letter-spacing: -4px;
+  font-size: calc(30px + (64 - 30) * ((100vw - 320px) / (1900 - 360)));
   font-family: var(--font-primary);
 }
 

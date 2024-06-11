@@ -1,3 +1,5 @@
+@use '../../luminaFrame/base/breakpoints' as *;
+
 .scrollContainer {
   display: flex;
   align-items: center;
@@ -7,6 +9,12 @@
   background-color: var(--color-white);
   position: relative;
   height: 50vh;
+
+  @include breakpoint(md, "not all") {
+    height: revert;
+    padding-bottom: var(--space-xl);
+    padding-top: var(--space-xxl);
+  }
 }
 
 .scrollText {
@@ -26,18 +34,27 @@
 .scrollContainer span {
   font-size: 180px;
   color: var(--color-contrast-higher);
+  @include breakpoint(md, "not all") {
+    font-size: 80px;
+  }
 }
 
 .starIcon {
   width: 80px;
   height: 80px;
   margin: 0 10px;
+  @include breakpoint(md, "not all") {
+    width: 40px;
+    height: 40px;
+  }
 }
 
 .scrollArrow {
   position: absolute;
   z-index: 1;
-  //top: calc(var(--space-xxs) * -1);
   left: 50%;
   transform: translate(-50%, -50%);
+  @include breakpoint(md, "not all") {
+    display: none;
+  }
 }

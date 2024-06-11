@@ -1,17 +1,35 @@
+@use '../../luminaFrame/base/breakpoints' as *;
+
 .headerSection {
   background-color: var(--color-white);
   padding: var(--space-xxxs) var(--space-sm);
   border-radius: 12px;
-  margin: var(--space-sm) var(--space-lg  );
-
+  margin: var(--space-sm) var(--space-lg);
   display: flex;
   align-items: center;
   gap: var(--space-xs);
 
+  @include breakpoint(md, "not all") {
+    margin: var(--space-md);
+  }
 
   nav {
     margin-left: auto;
+    @include breakpoint(md, "not all") {
+      display: none;
+    }
+  }
 
+  h4 {
+    @include breakpoint(md, "not all") {
+      display: none;
+    }
+  }
+
+  .button {
+    @include breakpoint(md, "not all") {
+      margin-left: auto;
+    }
   }
 
   nav ul {
