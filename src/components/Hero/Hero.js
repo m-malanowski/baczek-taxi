@@ -19,6 +19,7 @@ const Hero = () => (
                 <img className="heroLogo" src={logoHero} width={400} alt="Bączek TAXI"/>
             </div>
         </div>
+
     </section>
 );
 

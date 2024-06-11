@@ -19,16 +19,23 @@
 
 .scrollText {
   transform: rotate(4deg);
+  display: flex;
 
   &.negative {
     transform: rotate(-4deg);
   }
 }
 
+.scrollContainer img {
+  animation: rotate360 5s infinite linear;
+}
+
 .scrollContainer span, .scrollContainer img {
   transform: skewX(-15deg);
   display: inline-block;
   margin: 0 10px;
+  align-self: center;
+
 }
 
 .scrollContainer span {
@@ -56,5 +63,14 @@
   transform: translate(-50%, -50%);
   @include breakpoint(md, "not all") {
     display: none;
+  }
+}
+
+@keyframes rotate360 {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
   }
 }
