@@ -3,9 +3,27 @@
 .footerSection {
   background-color: var(--color-white);
 
+  h3 {
+    width: 75%;
+    @include breakpoint(md, "not all") {
+      width: 100%;
+    }
+  }
+
+  img {
+    @include breakpoint(md, "not all") {
+      display: none;
+    }
+  }
+
   .button {
     @include breakpoint(md, "not all") {
       width: 100%;
     }
+  }
+
+  .ridingLogoWrapper {
+    display: grid;
+    place-items: center;
   }
 }
