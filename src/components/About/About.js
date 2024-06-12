@@ -1,13 +1,16 @@
 import React from 'react';
 import logoAbout from "../../images/logoAbout.svg";
 import './About.scss';
+import InViewWrapper from "../InViewWrapper";
 
 const About = () => (
     <section className="aboutSection section" id="about">
 
         <div className="grid height-100">
             <div className="col-6@lg flex">
-                <img className="logoAbout align-self-center " src={logoAbout} width={500} alt="Bączek TAXI"/>
+                <InViewWrapper>
+                    <img className="logoAbout align-self-center " src={logoAbout} width={500} alt="Bączek TAXI"/>
+                </InViewWrapper>
             </div>
             <div className="col-6@lg">
                 <h3 className="font-500">Nasze pojazdy są wyposażone w foteliki dla dzieci, zapewniając bezpieczną

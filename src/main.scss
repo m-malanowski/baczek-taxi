@@ -19,3 +19,14 @@ html {
   border-bottom: 4px solid var(--color-contrast-higher);
   border-top: 4px solid var(--color-contrast-higher);
 }
+
+.in-view-wrapper {
+  opacity: 0;
+  transform: translateY(-10px);
+  transition: opacity 1s ease, transform 1s ease;
+}
+
+.in-view-wrapper.in-view {
+  opacity: 1;
+  transform: translateY(0);
+}
