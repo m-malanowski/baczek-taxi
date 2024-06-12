@@ -67,7 +67,7 @@ const Hero = () => {
                         <h2>Transport na każdą okazję!</h2>
                     </InViewWrapper>
                     <InViewWrapper delay={0.25}>
-                    <h4 className="font-500 margin-top-md">
+                        <h4 className="font-500 margin-top-md">
                             Przewozy na lotnisko, do Krynicy Morskiej oraz obsługa imprez. Oferujemy
                             <span
                                 ref={spanRef}
@@ -87,9 +87,7 @@ const Hero = () => {
                     </InViewWrapper>
                 </div>
                 <div className="col-6@sm">
-                    <InViewWrapper>
-                        <img className="heroLogo" src={logoHero} width={400} alt="Bączek TAXI"/>
-                    </InViewWrapper>
+                    <img className="heroLogo" src={logoHero} width={400} alt="Bączek TAXI"/>
                 </div>
             </div>
 
