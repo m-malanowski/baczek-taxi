@@ -1,11 +1,11 @@
 import React from 'react';
 import './Header.scss';
-import logo from '../../images/logo.svg';
+import logo from "../../images/logoAbout.svg";
 
 const Header = () => (
     <header className="headerSection">
         <img src={logo} width={60} alt="Bączek TAXI"/>
-        <h4 className="font-600">Bączek Taxi</h4>
+        <h4 className="font-600 logo">Bączek Taxi</h4>
 
         <nav>
             <ul>
