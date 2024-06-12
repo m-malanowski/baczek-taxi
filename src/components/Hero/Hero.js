@@ -6,6 +6,7 @@ import fleet1 from '../../images/fleet1.jpg';
 import InViewWrapper from "../InViewWrapper";
 import HornSound from "../SoundComponent";
 import sound from "../../sounds/car_horn.mp3";
+import AnimatedBzyk from "../AnimatedBzyk";
 
 const Hero = () => {
     const [showImage, setShowImage] = useState(false);
@@ -102,7 +103,8 @@ const Hero = () => {
                     </InViewWrapper>
                 </div>
                 <div className="col-6@sm">
-                    <img className="heroLogo" src={logoHero} width={400} alt="Bączek TAXI" />
+                    <AnimatedBzyk/>
+                    {/*<img className="heroLogo" src={logoHero} width={400} alt="Bączek TAXI" />*/}
                 </div>
             </div>
 
