@@ -2,11 +2,11 @@
 
 .aboutSection {
   background-color: var(--color-white);
-  height: 60vh;
+  //height: 60vh;
   position: relative;
-  @include breakpoint(md, "not all") {
-    height: 80vh;
-  }
+  //@include breakpoint(md, "not all") {
+  //  height: 80vh;
+  //}
 
   .logoAbout{
     @include breakpoint(md, "not all") {

@@ -30,14 +30,16 @@ const ScrollText = ({ text, isArrow, isNegative }) => {
         <div className="relative">
             {isArrow && <img src={rightArrow} alt="arrow" className="scrollArrow" />}
 
-            <div className="scrollContainer" ref={scrollContainerRef}>
-                <div className={`scrollText ${isNegative ? 'negative' : ''}`}>
+            <div className="scrollContainer">
+                <div className={`scrollText ${isNegative ? 'negative' : ''}`}  ref={scrollContainerRef}>
                     <span>{text}</span>
-                    <img src={star} alt="star" className="starIcon" />
+                    <img src={star} alt="star" className="starIcon"/>
                     <span>{text}</span>
-                    <img src={star} alt="star" className="starIcon" />
+                    <img src={star} alt="star" className="starIcon"/>
                     <span>{text}</span>
-                    <img src={star} alt="star" className="starIcon" />
+                    <img src={star} alt="star" className="starIcon"/>
+                    <span>{text}</span>
+                    <img src={star} alt="star" className="starIcon"/>
                     <span>{text}</span>
                 </div>
             </div>

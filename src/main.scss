@@ -1,16 +1,21 @@
 @use 'luminaFrame/base/_mixins.scss' as *;
 @use 'luminaFrame/base/breakpoints' as *;
 
-body {
-  font-family: 'Inter', sans-serif;
-}
-
 html {
-  background-color: #FDDC01;
+  background-color: #ffe845;
   overflow-x: hidden;
   scroll-behavior: smooth;
 }
 
 .section {
   padding: var(--space-md) var(--space-lg);
+}
+
+.border-bottom {
+  border-bottom: 4px solid var(--color-contrast-higher);
+}
+
+.border-top-bottom {
+  border-bottom: 4px solid var(--color-contrast-higher);
+  border-top: 4px solid var(--color-contrast-higher);
 }

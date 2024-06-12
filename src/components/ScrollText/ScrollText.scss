@@ -8,9 +8,8 @@
   width: 100%;
   background-color: var(--color-white);
   position: relative;
-  height: 50vh;
 
-  @include breakpoint(md, "not all") {
+  @include breakpoint(lg, "not all") {
     height: revert;
     padding-bottom: var(--space-xl);
     padding-top: var(--space-xxl);
@@ -20,6 +19,7 @@
 .scrollText {
   transform: rotate(4deg);
   display: flex;
+  overflow: hidden;
 
   &.negative {
     transform: rotate(-4deg);
@@ -41,7 +41,7 @@
 .scrollContainer span {
   font-size: 180px;
   color: var(--color-contrast-higher);
-  @include breakpoint(md, "not all") {
+  @include breakpoint(lg, "not all") {
     font-size: 80px;
   }
 }
@@ -50,7 +50,7 @@
   width: 80px;
   height: 80px;
   margin: 0 10px;
-  @include breakpoint(md, "not all") {
+  @include breakpoint(lg, "not all") {
     width: 40px;
     height: 40px;
   }
@@ -60,8 +60,9 @@
   position: absolute;
   z-index: 1;
   left: 50%;
+  top: -10%;
   transform: translate(-50%, -50%);
-  @include breakpoint(md, "not all") {
+  @include breakpoint(lg, "not all") {
     display: none;
   }
 }

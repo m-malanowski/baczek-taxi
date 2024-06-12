@@ -9,7 +9,7 @@
 
 .pricingWrapper {
   border-radius: 50px;
-  background-color: #fddc01;
+  background-color: #ffe845;
   margin: 0 var(--space-xxl);
   display: grid;
   place-items: center;
@@ -59,7 +59,7 @@
   box-shadow: 0 4px 8px rgba(0,0,0,0.1);
   transition: transform 0.5s ease, opacity 0.5s ease;
   opacity: 0;
-  background-color: #fddc01;
+  background-color: #ffe845;
   @include breakpoint(sm, "not all") {
     width: 300px;
     height: 300px;

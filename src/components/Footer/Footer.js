@@ -3,7 +3,7 @@ import './footer.scss';
 import ridingLogo from '../../images/ridingLogo.svg';
 
 const Footer = () => (
-    <footer className="footerSection section" id="contact">
+    <footer className="footerSection section border-top-bottom" id="contact">
         <h3 className="font-500">Jeśli potrzebujesz szybkiego i niezawodnego transportu, skontaktuj się z
             Bączek
             TAXI. Jesteśmy dostępni 24/7, aby zapewnić Ci bezpieczną i komfortową podróż.</h3>
