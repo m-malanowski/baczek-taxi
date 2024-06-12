@@ -60,4 +60,27 @@ html {
   animation: foo 4s ease-in-out infinite;
 }
 
+@keyframes strokeAnimation {
+  0% {
+    stroke-dasharray: 0, 10000;
+    stroke-dashoffset: 0;
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    stroke-dasharray: 10000, 10000;
+    stroke-dashoffset: -10000;
+  }
+}
+
+.stroke-animation {
+  stroke-dasharray: 10000;
+  stroke-dashoffset: 0;
+  animation: strokeAnimation 5s ease-in-out forwards, float 4s ease-in-out infinite;
+  stroke: blue; /* Ensure the stroke color is set */
+  fill: none; /* Remove fill to show only the stroke */
+  stroke-width: 2px; /* Set stroke width */
+}
 

@@ -53,9 +53,10 @@
 .heroLogo {
   @include breakpoint(sm, "not all") {
     position: absolute;
-    bottom: 0;
+    bottom: -100px;
     width: 225px;
     right: 0;
+    opacity: 0.6;
   }
   @include breakpoint(xs, "not all") {
     width: 180px;
