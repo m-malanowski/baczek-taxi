@@ -5,8 +5,9 @@ import './Fleet.scss';
 import 'swiper/css';
 
 const Fleet = () => (
-    <section className="fleetSection padding-left-md">
+    <section className="fleetSection">
         <Swiper
+            className="swiperContainer"
             spaceBetween={50}
             slidesPerView={4}
             breakpoints={{
